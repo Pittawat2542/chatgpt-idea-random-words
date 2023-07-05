@@ -1,0 +1,24 @@
+{
+  "problems": [
+    {"id": 1, "text": "Traffic jams"},
+    {"id": 2, "text": "Long waiting times"},
+    {"id": 3, "text": "Slow internet connection"},
+    {"id": 4, "text": "Spam emails"},
+    {"id": 5, "text": "Running out of battery"},
+    {"id": 6, "text": "Forgetting passwords"},
+    {"id": 7, "text": "Being stuck in a queue"},
+    {"id": 8, "text": "Losing keys"},
+    {"id": 9, "text": "Getting a flat tire"},
+    {"id": 10, "text": "Paying bills"},
+    {"id": 11, "text": "Dealing with customer service"},
+    {"id": 12, "text": "Procrastination"},
+    {"id": 13, "text": "Computer crashes"},
+    {"id": 14, "text": "Misplacing important documents"},
+    {"id": 15, "text": "Wardrobe malfunctions"},
+    {"id": 16, "text": "Slow public transportation"},
+    {"id": 17, "text": "Catching a cold"},
+    {"id": 18, "text": "Getting stuck in bad weather"},
+    {"id": 19, "text": "Spilling something on clothes"},
+    {"id": 20, "text": "Waiting for a late delivery"}
+  ]
+}
