@@ -2,6 +2,7 @@ import os
 import json
 import random
 import time
+from pathlib import Path
 
 import openai
 from dotenv import load_dotenv
@@ -10,6 +11,11 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = API_KEY
+
+
+PROBLEMS_FILE_PATH = Path('data/problems.json')
+COMMON_WORDS_FILE_PATH = Path('data/google-10000-english-no-swears-no-stopwords.txt')
+RESULT_FILE_PATH = Path('data/results.json')
 
 
 def data_generation(target_problem, concepts=[]):
@@ -48,11 +54,11 @@ Output format:
     response = chat_completion.choices[0].message.content
     content = response.split('```json')[1].split('```')[0]
 
-    if not os.path.exists('data/results.json'):
-        with open('data/results.json', 'w') as result_file:
+    if not os.path.exists(RESULT_FILE_PATH):
+        with open(RESULT_FILE_PATH, 'w') as result_file:
             result_file.write('{"standard": [], "random": []}')
 
-    with open('data/results.json', 'r+') as result_file:
+    with open(RESULT_FILE_PATH, 'r+') as result_file:
         result = json.load(result_file)
         if len(concepts) > 0:
             result['random'].append({'problem': target_problem, 'concepts': concepts, 'ideas': json.loads(content)['ideas']})
@@ -64,8 +70,8 @@ Output format:
 
 
 def main():
-    with open('data/problems.json', 'r') as problems_file:
-        with open('data/google-10000-english-no-swears-no-stopwords.txt', 'r') as words_file:
+    with open(PROBLEMS_FILE_PATH, 'r') as problems_file:
+        with open(COMMON_WORDS_FILE_PATH, 'r') as words_file:
             words = words_file.read().splitlines()
             concepts = random.choices(words, k=10)
             problems = json.load(problems_file)['problems']

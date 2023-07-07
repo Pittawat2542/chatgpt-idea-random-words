@@ -1,0 +1,84 @@
+{
+    "results": [
+        {
+            "problem": "Traffic jams",
+            "result": "random"
+        },
+        {
+            "problem": "Long waiting times",
+            "result": "standard"
+        },
+        {
+            "problem": "Slow internet connection",
+            "result": "random"
+        },
+        {
+            "problem": "Spam emails",
+            "result": "random"
+        },
+        {
+            "problem": "Running out of battery",
+            "result": "standard"
+        },
+        {
+            "problem": "Forgetting passwords",
+            "result": "random"
+        },
+        {
+            "problem": "Being stuck in a queue",
+            "result": "random"
+        },
+        {
+            "problem": "Losing keys",
+            "result": "standard"
+        },
+        {
+            "problem": "Getting a flat tire",
+            "result": "random"
+        },
+        {
+            "problem": "Paying bills",
+            "result": "random"
+        },
+        {
+            "problem": "Dealing with customer service",
+            "result": "random"
+        },
+        {
+            "problem": "Procrastination",
+            "result": "random"
+        },
+        {
+            "problem": "Computer crashes",
+            "result": "random"
+        },
+        {
+            "problem": "Misplacing important documents",
+            "result": "random"
+        },
+        {
+            "problem": "Wardrobe malfunctions",
+            "result": "random"
+        },
+        {
+            "problem": "Slow public transportation",
+            "result": "standard"
+        },
+        {
+            "problem": "Catching a cold",
+            "result": "random"
+        },
+        {
+            "problem": "Getting stuck in bad weather",
+            "result": "random"
+        },
+        {
+            "problem": "Spilling something on clothes",
+            "result": "random"
+        },
+        {
+            "problem": "Waiting for a late delivery",
+            "result": "standard"
+        }
+    ]
+}
